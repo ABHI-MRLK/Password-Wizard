@@ -1,0 +1,53 @@
+<html>
+<head>
+    <title>Password generator</title>
+    <style>
+        body{
+    background-color: #ff2121;
+    color:#fff;
+    font-family:'Times New Roman';
+        }
+    </style>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="generator">
+        <div class="password">
+            <input type="text" value="mrlk">
+            <button>copy</button>
+        </div>
+        <div class="range">
+            <input type="range" min="4" max="24" value="8" >
+            <span>8</span>
+        </div>
+        <div class="options">
+            <div class="option">
+                <label>
+                    <input type="checkbox" id="lowercaseCb">
+                    <span>a-z</span>
+                </label>
+            </div>
+            <div class="option">
+                <label>
+                    <input type="checkbox" id="uppercaseCb">
+                    <span>A-Z</span>
+                </label>
+            </div>
+            <div class="option">
+                <label>
+                    <input type="checkbox" id="digitsCb">
+                    <span>0-9</span>
+                </label>
+            </div>
+            <div class="option">
+                <label>
+                    <input type="checkbox" id="specialsCb">
+                    <span>!@$#%^</span>
+                </label>
+            </div>
+        </div>
+        <button class="generate">generate</button>
+    </div>
+    <script src="pswdgen.js"></script>
+</body>
+</html>
